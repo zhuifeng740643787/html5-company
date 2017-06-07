@@ -1,0 +1,87 @@
+@import "../css/font-awesome.min.css";
+@import "./vars";
+@import "./mixins";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  &, &:before, &:after {
+    .border-box;
+  }
+}
+a {
+  text-decoration: none;
+}
+ul, ol {
+  list-style: none;  
+}
+body {
+  font-size: 24px;
+}
+// 设置body size
+.media-font(@xxlarge, @xxlarge-font);
+.media-font(@xlarge, @xlarge-font);
+.media-font(@large, @large-font);
+.media-font(@medium, @medium-font);
+.media-font(@small, @small-font);
+.media-font(@xsmall, @xsmall-font);
+.media-font(@xxsmall, @xxsmall-font);
+
+body {
+  font-family: Times, "Times New Roman", sans-serif, serif, monospace;
+  line-height: 1;
+  color: #666666;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.6em;
+}
+h3 {
+  font-size: 1.2em;
+}
+h4 {
+  font-size: 1em;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #ffffff;
+  padding: 0.2em 0.5em; 
+}
+
+.input-item {
+  font-size: 1em;
+  padding: 0.8em;
+  border: 1px solid #9c9c9c;
+  background-color: #ffffff;
+  width: 100%;
+  &:focus {
+    outline: 3px solid #0286fe;
+
+  }
+}
+.clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    display: table;
+    content: '';
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+.show {
+  display: block; 
+}
+.hide {
+  display: none;
+}

@@ -1,0 +1,108 @@
+#evaluate {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .inner-content {
+    width: 100%;
+    background-color: rgba(249, 249, 249, 0.9);
+    padding: 3em 0;
+    & > header {
+      position: relative;
+      width: 80%;
+      margin: 0 10%;
+      text-align: center;
+      border-bottom: 2px solid #eaeaea;
+      h2 {
+        font-size: 1.5em;
+        line-height: 2;
+        color: #f14e00;
+        margin: 1em 0;
+      }
+    }
+    & > .content {
+      position: relative;
+      width: 90%;
+      margin: 0 5%;
+      .swiper-container {
+        width: 100%;
+        .swiper-slide {
+          width: 100%;
+          padding: 2em 4em;
+          section {
+            .content {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              @media screen and (max-width: @small) {
+                & {
+                  flex-direction: column;
+                }
+              }
+
+              .avatar {
+                width: 10em;
+                height: 10em;
+                border-radius: 5em;
+                margin: 0 2em;
+              }
+              .info {
+                max-width: 70%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1em;
+                p {
+                  font-size: 0.8em;
+                  line-height: 1.5;
+                  font-weight: 300;
+                  color: #808080;
+                }
+
+                .recommend {
+                  width: 100%;
+                  padding: 1em 0;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  .user-info {
+                    h3 {
+                      font-size: 1.2em;
+                      line-height: 1.8;
+                      color: #6a6a6a;
+                    }
+                    span {
+                      display: block;
+                      font-size: 0.9em;
+                      line-height: 1.2;
+                      color: #ff0000;
+                    }
+                  }
+                  img {
+                    display: block;
+                    width: 8em;
+                    height: 1.5em;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .swiper-button-prev, .swiper-button-next {
+          background-image: none !important;
+          text-align: center;
+          i {
+            font-size: 1em;
+            padding: 0.5em;
+            width: 2em;
+            background-color: #ccc; 
+            color: #ffffff;
+            border-radius: 3px;
+          } 
+        }
+      }
+    }
+  }
+
+}

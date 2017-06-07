@@ -1,0 +1,13 @@
+.border-box {
+  box-sizing: border-box;
+  -webkit-border-sizing: border-box;
+  -moz-border-sizing: border-box;
+}
+
+.media-font(@max-width, @font-size) {
+  @media screen and (max-width: @max-width) {
+    body {
+      font-size: @font-size;
+    }
+  }
+}
